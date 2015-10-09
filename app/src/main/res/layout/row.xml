@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="185dp"
+            android:layout_height="185dp"
+            android:id="@+id/image_icon"
+            android:scaleType="fitXY"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="RecipeName"
+            android:id="@+id/recipe_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:elegantTextHeight="false"
+            android:textStyle="normal"
+            android:width="150dp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="RecipeRate"
+            android:id="@+id/recipe_rate"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="normal|bold"
+            android:layout_weight="1"
+            android:elegantTextHeight="false"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="45dp"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

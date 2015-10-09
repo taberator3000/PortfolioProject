@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="lavrik.food4fork.MainActivity">
+    <item android:id="@+id/refresh_id" android:title="@string/find"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/info_app" android:title="@string/info"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

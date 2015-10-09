@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Food4Fork</string>
+    <string name="title_activity_main">Food4Fork</string>
+    <string name="find">Search</string>
+    <string name="info">Info</string>
+
+
+</resources>
