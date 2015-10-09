@@ -58,7 +58,7 @@ public class MainActivity extends ActionBarActivity {
     private String BEFORERECIPES="&q=";
     ArrayList<Recipe>recipeListReady;
     //hmmm
-
+//lol
  @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
