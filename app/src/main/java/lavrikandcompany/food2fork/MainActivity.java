@@ -59,6 +59,7 @@ public class MainActivity extends ActionBarActivity {
     ArrayList<Recipe>recipeListReady;
     //gitcheck
     //new change
+    //extra changes
 
  @Override
     protected void onCreate(Bundle savedInstanceState) {
