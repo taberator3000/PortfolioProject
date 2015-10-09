@@ -57,9 +57,7 @@ public class MainActivity extends ActionBarActivity {
     private String PAGE="&page=";
     private String BEFORERECIPES="&q=";
     ArrayList<Recipe>recipeListReady;
-    //gitcheck
-    //new change
-    //extra changes
+    //omg
 
  @Override
     protected void onCreate(Bundle savedInstanceState) {
