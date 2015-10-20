@@ -1,8 +1,12 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
+
+        <item name="android:fitsSystemWindows">true</item>
+        <!--  <item name="android:actionBarStyle">@style/ActionBar.Solid.GreenStyle</item> -->
     </style>
+
 
 </resources>

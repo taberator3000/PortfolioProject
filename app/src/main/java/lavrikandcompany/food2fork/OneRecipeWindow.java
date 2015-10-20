@@ -140,9 +140,9 @@ public class OneRecipeWindow extends Activity {
         protected void onPostExecute(OneRecipe oneRecipe) {
             super.onPostExecute(oneRecipe);
             //вертаємо сюди готовий 1 оєкт з нашою інфою для рецепта і його картинки і тут відповідно все розкладаємо
-            ingridient_list.setText(oneRecipe.getIngredientsArrayList().toString().replace(LEFT_BRAKET, EMPTY).replace(RIGHT_BRAKET, EMPTY));
+            ingridient_list.setText("Ingredients:" + oneRecipe.getIngredientsArrayList().toString().replace(LEFT_BRAKET, EMPTY).replace(RIGHT_BRAKET, EMPTY));
             recipeNameText.setText(oneRecipe.getTitleOne());
-            publisher_info.setText(oneRecipe.getPublisherOne());
+            publisher_info.setText("Publisher:" + oneRecipe.getPublisherOne());
 
             final ProgressBar progressBar=(ProgressBar)findViewById(R.id.progress_one_bar);
 

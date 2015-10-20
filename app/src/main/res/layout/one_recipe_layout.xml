@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1"
-    android:padding="3dp">
+
+    android:background="#d2fae902">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_weight="0.26">
+        android:layout_height="350dip"
+
+        android:id="@+id/frame2">
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="350dip"
             android:id="@+id/icon_one"
-
             android:scaleType="fitXY"
            />
 
@@ -31,28 +31,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="MediumText"
+        android:text="RecipeName"
         android:id="@+id/recipeNameText"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.26" />
-
+        android:layout_below="@+id/frame2"
+        android:layout_marginTop="12dp"
+        android:textColor="#090808"
+        android:textStyle="bold" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/recipeNameText"
+    android:layout_marginTop="12dp">
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Small Test"
+        android:text="Ingridients"
         android:id="@+id/ingridient_list"
-        android:layout_weight="0.25" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/publisher_info"
-        android:layout_weight="0.17" />
+        android:textColor="#090808" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textAppearance="?android:attr/textAppearanceSmall"
+           android:text="Publisher"
+           android:id="@+id/publisher_info"
+           android:layout_below="@+id/ingridient_list"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginBottom="12dp"
+           android:textColor="#1709d4"
+           android:textStyle="italic" />
+
+   </RelativeLayout>
+</ScrollView>
 
 
 
 
-</LinearLayout>
+</RelativeLayout>

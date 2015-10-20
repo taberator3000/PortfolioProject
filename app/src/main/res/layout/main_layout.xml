@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/url_searsh"
-        android:text="sugar,milk"/>
+        android:text="sugar,milk"
+        android:background="#02fd0a" />
 
     <ListView
         android:layout_width="match_parent"
